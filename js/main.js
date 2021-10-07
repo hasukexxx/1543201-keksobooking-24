@@ -15,7 +15,7 @@ const PHOTOS = [
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg',
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg',
 ];
-const ADDS_NUMBER = 2;
+const ADDS_NUMBER = 10;
 
 const getRandomNumber = (min,max) => Math.floor(min + Math.random() * (max + 1 - min));
 
@@ -27,8 +27,6 @@ const getRandomAvatar = () => {
   return randomAvatar;
 };
 
-getRandomAvatar();
-
 const getRandomPoint = function (from,to,decimalPlace) {
   if (to <= from || from < 0) {
     return 'Некорректные данные';
@@ -36,7 +34,6 @@ const getRandomPoint = function (from,to,decimalPlace) {
   const point = Math.random() * (to - from) + from;
   return point.toFixed(decimalPlace);
 };
-
 
 const randomArray = (array) => Array.from({
   length: getRandomNumber(1,array.length)},
