@@ -1,4 +1,4 @@
-import {getRandomNumber, getRandomAvatar, getRandomPoint, randomArray} from './random-functions.js';
+import {getRandomNumber, getRandomAvatar, getRandomPoint, randomArray} from './utils/random-functions.js';
 
 const LAT_MIN = 35.65;
 const LAT_MAX = 35.7;
